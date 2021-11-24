@@ -1,0 +1,18 @@
+#debugging files
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+.idea/*
+
+#data preparation, release on request
+scan_data/*
+prepare_data/amass.py
+
+#local scripts
+*.sh
+
+
+#local debug and eval
+registration_data.py
+all_script.py
+main.py
