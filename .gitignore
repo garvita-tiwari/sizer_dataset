@@ -16,3 +16,4 @@ prepare_data/amass.py
 registration_data.py
 all_script.py
 main.py
+seg_reg_quant.py

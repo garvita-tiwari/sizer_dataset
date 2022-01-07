@@ -1,7 +1,7 @@
 
 
 
-### NeuralGIF
+### SIZER
  
 Code for  Sizer Dataset
 
