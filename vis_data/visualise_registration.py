@@ -6,9 +6,9 @@ from psbody.mesh import Mesh
 import cv2
 import sys
 import numpy as np
-from global_var import scan_dir, registration_dir
+from config.global_var import scan_dir, registration_dir
 import ipdb
-from mesh_utils import read_obj, label_colours, get_submesh, garms, normalize_scan
+from utils.mesh_utils import read_obj, label_colours, get_submesh, garms, normalize_scan
 from scan_visualise import remove_noise
 
 
@@ -44,7 +44,7 @@ def align_scan(sub_scan):
 
 
 def vis_reg(sub_scan, gender='neutral'):
-    sys.path.append(global_var.SMPL_PATH)
+    sys.path.append(config.global_var.SMPL_PATH)
     from models.smpl4garment import SMPL4Garment
     reg_path = os.path.join(registration_dir, sub_scan, 'singlemesh_{}.npz'.format(gender))
     if not os.path.exists(reg_path):

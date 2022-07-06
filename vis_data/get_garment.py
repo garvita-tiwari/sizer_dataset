@@ -1,14 +1,14 @@
 """get 3D garment segmentation using segmentation UV tex"""
 from psbody.mesh import Mesh, MeshViewer
 import argparse
-from global_var import scan_dir
+from config.global_var import scan_dir
 import ipdb
 import os
 import cv2
 import numpy as np
 import ipdb
 
-from mesh_utils import get_submesh, label_colours, garms, read_obj
+from utils.mesh_utils import get_submesh, label_colours, garms, read_obj
 def getLabels(model_seg, vth, fth, fh):
 
     _, tex_indices_ = np.unique(fh.ravel(), return_index=True)
@@ -54,6 +54,8 @@ def get_garment(sub_scan):
 
         #you can save the new mesh, if needed
         mv = MeshViewer()
+        mv.set_background_color(np.array([1, 1, 1]))
+
         mv.set_static_meshes([new_mesh])
         ipdb.set_trace()
 

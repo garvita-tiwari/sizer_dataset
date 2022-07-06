@@ -71,10 +71,13 @@ def normalize_scan(scan, smpl, change_height=False):
     print(np.max(scan.v[:, 1]) - np.min(scan.v[:, 1]))
     return scan
 
+class Minimal(object):
+    def __init__(self, **kwargs):
+        self.__dict__ = kwargs
 
 def read_obj(filename):
     ###Thanks to Thiemo for this code
-    from opendr.dummy import Minimal
+    # from opendr.dummy import Minimal
 
     obj_directory = split(filename)[0]
     lines = open(filename).read().split('\n')
@@ -117,6 +120,7 @@ def read_obj(filename):
             d[k] = v
 
     result = Minimal(**d)
+    # result = (**d)
 
     return result
 
