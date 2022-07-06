@@ -4,7 +4,7 @@
 ## SIZER Dataset Repository
  
 
-<img src="https://virtualhumans.mpi-inf.mpg.de/sizer/sizer_teaser.jpg" alt="" width="88%"/>
+<p align="center"><img src="https://virtualhumans.mpi-inf.mpg.de/sizer/sizer_teaser.jpg" alt="" width="88%"/></p>
 
 
 ### Download Dataset 
