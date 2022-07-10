@@ -30,6 +30,11 @@ subjectid = {10001, 10005 ....... }
 scanid = {1937.....} (for 10001)
 
 <p align="center">
+Output
+</p>
+
+<p align="center">
+
   <img alt="org_scan" src="data/org_scan.png" width="10%">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="seg_labels" src="data/seg_labels.png" width="10%">
@@ -48,6 +53,9 @@ scanid = {1937.....} (for 10001)
 
     python vis_data/get_garment.py --scan=<subjectid>/<scanid>
 
+<p align="center">
+Output
+</p>
 <p align="center">
   <img alt="org_scan" src="data/shirt.png" width="13%">
 &nbsp; &nbsp; &nbsp; &nbsp;
@@ -69,11 +77,13 @@ This script only visualises original scan and 3 layers of segmented scan, namely
 
     python vis_data/visualise_registration.py --scan=<subjectid>/<scanid>
 
+Note: Before using/comparing scans and registrations, align scan, using align_scan() in visualise_registration.py 
 
-#### Using scans and registrations
+### Evaluate registration
 
-    Align scan, using visualise_registration/align_scan, before comparing scan and corresponding registrations.
+    python vis_data/visualise_registration.py --scan=<subjectid>/<scanid>
 
+If you have your own code/method for scan registrations, we here provide a code to evaluate the quality of registration. 
 ## Others
 
 We here provide code for using/evaluating SIZER dataset for various tasks such as 3D reconstruction from images, scan fitting etc.
@@ -84,7 +94,12 @@ For image based reconstruction, SIZER scans can be rendered and data pair of {im
 #### Rendering using fixed camera views:
     python image_recon/pytorch_renderer.py --mesh_path=<obj_file> --out_dir=<out_dir>
 
+
+#### Rendering image, depth and normal
+    python image_recon/image_renderer.py --mesh_path=<obj_file> --out_dir=<out_dir>
+
 <obj_file> should contain <>.obj and <>.jpg in the same folder with same name. Currently we render from 72 fixed views, This can be changed in create_rotmat() function in image_recon/render_utils.py
+
 
 #### Creating data pairs:
     Coming Soon
