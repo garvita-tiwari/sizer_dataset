@@ -101,6 +101,24 @@ For image based reconstruction, SIZER scans can be rendered and data pair of {im
 <obj_file> should contain <>.obj and <>.jpg in the same folder with same name. Currently we render from 72 fixed views, This can be changed in create_rotmat() function in image_recon/render_utils.py
 
 
+<p align="center">
+Output
+</p>
+<p align="center">
+  <img alt="org_scan" src="data/9.jpg" width="12%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="org_scan" src="data/9_depth.jpg" width="12%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="clean_scan" src="data/9_normal.jpg" width="12%">
+</p>
+<p align="center">
+  RGB render
+&nbsp; &nbsp; &nbsp; &nbsp;
+  Depth
+&nbsp; &nbsp; &nbsp; &nbsp;
+  Normal
+</p>
+
 #### Creating data pairs:
     Coming Soon
 
