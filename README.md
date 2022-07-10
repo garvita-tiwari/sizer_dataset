@@ -49,40 +49,6 @@ We compare SIZER dataset with existing real world 3D datasets
 | Vest, Pants        | 23              | 
 
 
-= {'g1': 'ShirtNoCoat_Pants', 165
-'g2' : 'ShirtNoCoat_Pants'  157 
-'g9' : 'ShirtNoCoat_Pants' , 96
-'l1' : 'ShirtNoCoat_Pants', 135
-'l4' : 'ShirtNoCoat_Pants',  94 
-
-
-
-'g8': 'ShirtNoCoat_ShortPants', 95
-'l5':  'ShirtNoCoat_ShortPants', 87
-
-
-
-'g3' : 'Coat_Pants', 155
-'g10' : 'Coat_Pants', 97
-
-'g4' : 'Hoodies',158
-'g11' : 'Hoodie Pants', 97
-
-
-'g5' : 'TShirtNoCoat_ShortPants',  131
-'g6' :'TShirtNoCoat_ShortPants',  154
-'g12': 'TShirtNoCoat_ShortPants', 98
-'g13': 'TShirtNoCoat_ShortPants', 101
-'l2' : 'TShirtNoCoat_ShortPants',  130
-'l3' : 'TShirtNoCoat_ShortPants', 123
-'l6' : 'TShirtNoCoat_ShortPants', 76 
-'l7' : 'TShirtNoCoat_ShortPants'} 76
-
-
-'g7' : 'Vest_ShortPants' , 134
-'g14': 'Vest_ShortPants', 92
-
-'g15' : 'Vest_Pants', 23
 
 ## Visualize and process data
 
