@@ -19,6 +19,71 @@ Fill this [form](https://docs.google.com/forms/d/e/1FAIpQLSddBep3Eif1gI-6IhaZybB
     Check INSTALL.MD
 
 
+## Dataset Details
+
+A dataset of clothing size variation of approximately 2000  scans including 100 subjects wearing 10 garment classes in different sizes,
+where we make available, scans, clothing segmentation, SMPL+G registrations, body shape under clothing, garment class and size labels
+
+
+### Data and Annotations
+
+We compare SIZER dataset with existing real world 3D datasets
+
+| Data  | Number of Scans | Registrations        | Segmentation          | Minimal Clothing/Body under clothing             | Multiview images                  | Labels                          | Demographics|
+|-------|-----------------|----------------------|-----------------------|--------------------------------------------------|-----------------------------------|---------------------------------| --------------|
+| SIZER | ~2000           | SMPL, SMPL+D, SMPL+G | Upper, Lower and body | yes | code or scanner images on request | clothing style, size and gender | Yes(on request)|
+| CAPE  | Dynamic scans   | SMPL , SMPL+D        | No | Yes | No*                               | Gender                          | No |
+| THUman2.0  | ~500            | SMPL , SMPL+X        | No | Yes | No*                               | -                               | No |
+
+
+
+
+| Clothing Style     | Number of scans |  
+|--------------------|-----------------| 
+| TShirt, Shorts     | 889         |  
+| Shirt, Pants       | 655             | 
+| Shirt, Shorts      | 182             | 
+| Shirt +Coat, Pants | 252             | 
+| Hoodies, Pants     | 255             |
+| Vest, Short        | 226             | 
+| Vest, Pants        | 23              | 
+
+
+= {'g1': 'ShirtNoCoat_Pants', 165
+'g2' : 'ShirtNoCoat_Pants'  157 
+'g9' : 'ShirtNoCoat_Pants' , 96
+'l1' : 'ShirtNoCoat_Pants', 135
+'l4' : 'ShirtNoCoat_Pants',  94 
+
+
+
+'g8': 'ShirtNoCoat_ShortPants', 95
+'l5':  'ShirtNoCoat_ShortPants', 87
+
+
+
+'g3' : 'Coat_Pants', 155
+'g10' : 'Coat_Pants', 97
+
+'g4' : 'Hoodies',158
+'g11' : 'Hoodie Pants', 97
+
+
+'g5' : 'TShirtNoCoat_ShortPants',  131
+'g6' :'TShirtNoCoat_ShortPants',  154
+'g12': 'TShirtNoCoat_ShortPants', 98
+'g13': 'TShirtNoCoat_ShortPants', 101
+'l2' : 'TShirtNoCoat_ShortPants',  130
+'l3' : 'TShirtNoCoat_ShortPants', 123
+'l6' : 'TShirtNoCoat_ShortPants', 76 
+'l7' : 'TShirtNoCoat_ShortPants'} 76
+
+
+'g7' : 'Vest_ShortPants' , 134
+'g14': 'Vest_ShortPants', 92
+
+'g15' : 'Vest_Pants', 23
+
 ## Visualize and process data
 
 
