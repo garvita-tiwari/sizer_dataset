@@ -157,7 +157,7 @@ Output
 
 
 
-### Citation:
+### If you are using SIZER dataset, please cite:
     @inproceedings{tiwari20sizer,
         title = {SIZER: A Dataset and Model for Parsing 3D Clothing and Learning Size Sensitive 3D Clothing},
         author = {Tiwari, Garvita and Bhatnagar, Bharat Lal and Tung, Tony and Pons-Moll, Gerard},
@@ -166,3 +166,13 @@ Output
         organization = {{Springer}},
         year = {2020},
         }
+
+    @inproceedings{antic2024close,
+        title = {{CloSe}: A {3D} Clothing Segmentation Dataset and Model},
+        author = {Antić, Dimitrije and Tiwari, Garvita and Ozcomlekci, Batuhan  and Marin, Riccardo  and Pons-Moll, Gerard},
+        booktitle = {International Conference on 3D Vision (3DV)},
+        month = {March},
+        year = {2024},
+    }
+
+Also refer to [CloSe](https://virtualhumans.mpi-inf.mpg.de/close3dv24/) for diverse poses of SIZER dataset and more accurate and fine-grained clothing segmentaion.
